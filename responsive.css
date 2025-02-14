@@ -1,0 +1,41 @@
+@media (max-width: 576px) {
+	body {
+	  height: 100%;
+	}
+  
+	section {
+	  display: grid;
+	  grid-template-columns: repeat(1, minmax(300px, 1fr));
+	  grid-template-rows: auto repeat(7, minmax(200px, auto)); /* Adjusted */
+	  gap: 20px;
+	  background-color: hsl(226, 43%, 10%);
+	  padding: 40px;
+	  width: 90%;
+	  max-width: 1200px;
+	}
+  
+	.intro {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  gap: 10px;
+	  height: auto; /* Allow it to take only required space */
+	}
+  
+	.user {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  height: fit-content;
+	}
+  
+	.stats {
+	  display: flex;
+	  flex-direction: row;
+	}
+  
+	section > div {
+	  min-height: 200px; /* Ensures all grid items have space */
+	}
+  }
+  

@@ -12,8 +12,11 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Time tracking dashboard</title>
 
@@ -32,42 +35,56 @@
     <main>
       <section>
         <div class="intro">
-            <div class="user">
-                <img src="./images/image-jeremy.png" alt="jeremy">
-                <p >Report for</p>
-                <h1>Jeremy Robson</h1>
-            </div>
-            <div class="stats">
-              <button class="daily">Daily</button>
-              <button class="weekly">Weekly</button>
-              <button class="monthly ">Monthly</button>
-            </div>
-                        
+          <div class="user">
+            <img src="./images/image-jeremy.png" alt="jeremy" />
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+          <div class="stats">
+            <button class="daily active" onclick="setTimer('daily',this)">
+              Daily
+            </button>
+            <button class="weekly" onclick="setTimer('weekly',this)">
+              Weekly
+            </button>
+            <button class="monthly" onclick="setTimer('monthly',this)">
+              Monthly
+            </button>
+          </div>
         </div>
         <div class="work">
-          <img class="bag" src="./images/icon-work.svg" alt="">
-	  <div class="workdet"></div>
+          <img class="bag" src="./images/icon-work.svg" alt="" />
+          <div class="workdet">
+            <!-- <article class="boxtop">
+              <p>Work</p>
+              <img src="./images/icon-ellipsis.svg" alt="" />
+            </article>
+
+            <span class="curr">32hrs</span>
+
+            <span class="prev">Last Week - 36hrs</span> -->
+          </div>
         </div>
         <div class="play">
-		<img class="bag" src="./images/icon-play.svg" alt="">
-	  	<div class="workdet"></div>
-	</div>
+          <img class="bag" src="./images/icon-play.svg" alt="" />
+          <div class="workdet"></div>
+        </div>
         <div class="study">
-		<img class="bag" src="./images/icon-study.svg" alt="">
-	  	<div class="workdet"></div>
-	</div>
+          <img class="bag" src="./images/icon-study.svg" alt="" />
+          <div class="workdet"></div>
+        </div>
         <div class="exercise">
-		<img class="bag" src="./images/icon-exercise.svg" alt="">
-	  	<div class="workdet"></div>
-	</div>
+          <img class="bag" src="./images/icon-exercise.svg" alt="" />
+          <div class="workdet"></div>
+        </div>
         <div class="social">
-		<img class="bag" src="./images/icon-social.svg" alt="">
-	  	<div class="workdet"></div>
-	</div>
+          <img class="bag" src="./images/icon-social.svg" alt="" />
+          <div class="workdet"></div>
+        </div>
         <div class="selfcare">
-		<img class="bag" src="./images/icon-self-care.svg" alt="">
-	  	<div class="workdet"></div>
-	</div>
+          <img class="bag" src="./images/icon-self-care.svg" alt="" />
+          <div class="workdet"></div>
+        </div>
       </section>
     </main>
 
@@ -75,8 +92,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-  
-  <script src="./main.js"></script>
-  </body>
 
+    <script src="./main.js"></script>
+  </body>
 </html>
