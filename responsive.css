@@ -1,6 +1,7 @@
 @media (max-width: 680px) {
   body {
     height: 100%;
+    /* max-width: 100vw; */
   }
 
   section {
@@ -30,6 +31,7 @@
   }
   .user h1 {
     margin: 0;
+    font-size: 25px;
   }
   .user p {
     margin: 0;
