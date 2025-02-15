@@ -1,41 +1,107 @@
-@media (max-width: 576px) {
-	body {
-	  height: 100%;
-	}
-  
-	section {
-	  display: grid;
-	  grid-template-columns: repeat(1, minmax(300px, 1fr));
-	  grid-template-rows: auto repeat(7, minmax(200px, auto)); /* Adjusted */
-	  gap: 20px;
-	  background-color: hsl(226, 43%, 10%);
-	  padding: 40px;
-	  width: 90%;
-	  max-width: 1200px;
-	}
-  
-	.intro {
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  gap: 10px;
-	  height: auto; /* Allow it to take only required space */
-	}
-  
-	.user {
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	  height: fit-content;
-	}
-  
-	.stats {
-	  display: flex;
-	  flex-direction: row;
-	}
-  
-	section > div {
-	  min-height: 200px; /* Ensures all grid items have space */
-	}
+@media (max-width: 680px) {
+  body {
+    height: 100%;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    grid-template-rows: auto repeat(7, minmax(200px, auto)); /* Adjusted */
+    gap: 20px;
+    background-color: hsl(226, 43%, 10%);
+    padding: 40px;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto; /* Allow it to take only required space */
+  }
+
+  .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+  .user h1 {
+    margin: 0;
+  }
+  .user p {
+    margin: 0;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+  section > div {
+    min-height: 200px; /* Ensures all grid items have space */
+  }
+  .boxbottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 1024px) {
+  body {
+    height: 100%;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: auto repeat(4, minmax(200px, auto)); /* Adjusted */
+    gap: 20px;
+    background-color: hsl(226, 43%, 10%);
+    padding: 40px;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .intro {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto; /* Allow it to take only required space */
+  }
+
+  .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+  .user h1 {
+    margin: 0;
+  }
+  .user p {
+    margin: 0;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+  section > div {
+    min-height: 200px; /* Ensures all grid items have space */
   }
   
+}

@@ -19,14 +19,14 @@ async function dataCollector() {
     }
     for (let i = 0; i < 6; i++) {
       elements[i].innerHTML = `
-        <article class="boxtop">
+            <article class="boxtop">
               <p>${json[i].title}</p>
               <img class="threedot" src="./images/icon-ellipsis.svg" alt="" />
             </article>
-
-            <span class="curr">${json[i].timeframes[timer].current}hrs</span>
-
-            <span class="prev">${pre} - ${json[i].timeframes[timer].previous}hrs</span>
+            <article class="boxbottom">
+              <span class="curr">${json[i].timeframes[timer].current}hrs</span>
+              <span class="prev">${pre} - ${json[i].timeframes[timer].previous}hrs</span>
+            </article>
         `;
     }
     // console.log(json[1]);
