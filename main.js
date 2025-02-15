@@ -1,5 +1,5 @@
 let elements = document.getElementsByClassName("workdet");
-let timer = "daily";
+let timer = "weekly";
 let pre;
 
 async function dataCollector() {
@@ -29,7 +29,6 @@ async function dataCollector() {
             </article>
         `;
     }
-    
   } catch (error) {
     console.log(error.message);
   }
@@ -43,4 +42,3 @@ function setTimer(newTimer, element) {
   dataCollector();
 }
 dataCollector();
-
