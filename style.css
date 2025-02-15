@@ -11,30 +11,12 @@ body {
   align-items: center;
   background-color: rgb(15, 20, 36);
   font-family: "Rubik", sans-serif;
-  font-weight: 400; /* Default weight */
+  font-weight: 400;
 }
 main {
   max-width: 1440px;
   color: white;
 }
-/* section{
-    display: grid;
-    grid-template-columns: repeat(4,250px);
-    grid-template-rows: repeat(2,250px);
-    display: grid;
-    gap: 40px;
-    background-color: hsl(226, 43%, 10%);
-    padding: 10px;
-    
-    
-}
-section div{
-    background-color: hsl(235, 46%, 20%);
-}
-.intro{
-    grid-row: 1 / 3;
-    background-color: hsl(235, 46%, 20%);
-} */
 
 section {
   display: grid;
@@ -45,23 +27,21 @@ section {
   padding: 40px;
   width: 90%;
   max-width: 1200px;
-  /* margin-left: 0px; */
+  
 }
 
 section div {
   background-color: hsl(235, 46%, 20%);
   border-radius: 10px;
   padding: 20px;
-  /* min-height: 150px; */
+  
 }
 
 .intro {
   grid-row: 1/3;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding: 0;
-  /* justify-content: center; */
 }
 .user {
   padding: 0;
@@ -110,7 +90,6 @@ section div {
   text-align: left;
 }
 
-/* Optimized for dynamic JS class addition */
 .stats button.light {
   color: white;
 }
@@ -179,7 +158,6 @@ section div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 5% 5%; */
 }
 .boxtop img {
   width: 12%;
@@ -189,7 +167,6 @@ section div {
   font-weight: 100;
 }
 .prev {
-  /* font-weight: 100; */
   color: hsl(235, 36%, 70%);
   margin-top: 10px;
   font-size: 16px;

@@ -21,7 +21,7 @@ async function dataCollector() {
       elements[i].innerHTML = `
             <article class="boxtop">
               <p>${json[i].title}</p>
-              <img class="threedot" src="./images/icon-ellipsis.svg" alt="" />
+              <img class="threedot" src="./images/icon-ellipsis.svg" alt="dots" />
             </article>
             <article class="boxbottom">
               <span class="curr">${json[i].timeframes[timer].current}hrs</span>
@@ -29,7 +29,7 @@ async function dataCollector() {
             </article>
         `;
     }
-    // console.log(json[1]);
+    
   } catch (error) {
     console.log(error.message);
   }
@@ -44,4 +44,3 @@ function setTimer(newTimer, element) {
 }
 dataCollector();
 
-// console.log(elements[1]);
